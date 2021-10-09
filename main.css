@@ -13,3 +13,7 @@ p{
  margin: 0px auto;
  display: block;
 }
+ol li {
+ font-size: x-large;
+ text-align: left;
+}

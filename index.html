@@ -1,83 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 
- <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VCS</title>
-  <link rel="stylesheet" href="./main.css">
- </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VCS</title>
+    <link rel="stylesheet" href="./main.css">
+  </head>
 
- <body>
-  <h1 class="mainHeading">Version Control System Using GitHub</h1>
-  <p>Version control, also known as source control, is the practice of tracking and managing changes to software code.
-   Version control systems are software tools that help software teams manage changes to source code over time. As
-   development environments have accelerated, version control systems help software teams work faster and smarter. They
-   are
-   especially useful for DevOps teams since they help them to reduce development time and increase successful
-   deployments.</p>
-  <p>
-   Lets learn VCS(Version Control System) using GitHub.First of all you have to create GitHub account on <a
-    href="http://github.com" target="_blank">github.com</a> and download git on your local computer. <a
-    href="http://git-scm.com/download" target="_blank">Download From Here</a>.
-   <br />
-  </p>
-  <p>After creation your GitHub acount click on plus symbol on right top and then click on new repository.</p>
-  <img src="./Pictures/GitRepoCreationA.PNG" alt="GitRepoCreation" class="center" width="60%">
-  <p>
+  <body>
+    <h1 class="mainHeading">Version Control System Using GitHub</h1>
+    <p>Version control, also known as source control, is the practice of tracking and managing changes to software code.
+      Version control systems are software tools that help software teams manage changes to source code over time. As
+      development environments have accelerated, version control systems help software teams work faster and smarter.
+      They
+      are
+      especially useful for DevOps teams since they help them to reduce development time and increase successful
+      deployments.</p>
+    <p>
+      Lets learn VCS(Version Control System) using GitHub.First of all you have to create GitHub account on <a
+        href="http://github.com" target="_blank">github.com</a> and download git on your local computer. <a
+        href="http://git-scm.com/download" target="_blank">Download From Here</a>.
+      <br />
+    </p>
+    <p>After creation your GitHub acount click on plus symbol on right top and then click on new repository.</p>
+    <img src="./Pictures/GitRepoCreationA.PNG" alt="GitRepoCreation" class="center" width="60%">
+    <p>
 
-   You will be shown this page.Now create name for your repository and choose options of your choice and click on create
-   repository
-  </p>
-  <img src="./Pictures/GitRepoCreationB.PNG" alt="GitRepoCreation" class="center">
-  <p>
-   After successfully creation of repository you will be shown this page and this will be URL for your repository.
-  </p>
-  <img src="./Pictures/GitRepoCreationC.PNG" alt="GitRepoCreation" class="center">
- </body>
- <ol>
-  <li><b>git init</b></li>
-  <p>Open directory in terminal and and initialize the empty git repository on local machine using commad <b>git init
-   </b></p>
-  <img src="./Pictures/GitInit.PNG" alt="GitInit" class="center">
-  <li><b>git status</b></li>
-  <p>This command will tell you about files which are modifed,updated or deleted</p>
-  <img src="./Pictures/GitStatus.PNG" alt="GitStatus" class="center">
-  <li><b>git add</b></li>
-  <p>The command <b> git add File-Name </b> (which add particular file to stage area ) or <b>git add .</b> (which add
-   all
-   files of directory to staging area) </p>
-  <img src="./Pictures/GitAdd.PNG" alt="GitAdd" class="center">
-  <li><b>git commit</b></li>
-  <p>Once the files are in staging area, you can save them to commit history usnig coomand <b>git commit -m Message</b>
-  </p>
-  <img src="./Pictures/GitCommit.PNG" alt="GitCommit" class="center">
-  <li><b>git remote add origin URL</b></li>
-  <p>Once the commits have be saved we can send this changes to GitHub.In order to do that we first have to link over
-   local repository which we created using <b>git init</b> and that repository which we created on GitHub, using command
-   <b>git remote add origin URL</b>
-  </p>
-  <img src="./Pictures/GitRemote.PNG" alt="GitRemote" class="center">
-  <li><b>git push -u origin Branch-Name</b></li>
-  <p>Once the coonection between local repository and online repository has been established, we can push our changes to
-   online or central repository so that data remain synchronous by using command <b>git push -u origin Branch-name</b>
-  </p>
-  <img src="./Pictures/GitPush.PNG" alt="GitPush" class="center">
-  <p>After git push commnad you can see all the changes have be saved in central repository and it also show the no. of
-   commits have been made so far.</p>
-  <img src="./Pictures/CentralRepo.PNG" alt="Git Central repo" class="center">
-  <li><b>git pull</b></li>
-  <p>This commnad is used to pull the changes made in remote repository to local repository</p>
-  <p>Consider if our local repository is synchronized with central repository but we we made changes at central
-   repository as well
-   as on local repository and try to push our loacl changes to online repository we will shown an error message like
-   remote contain work that you donot contain locally so we have to pull the changes from remote to loacl first using
-   command <b>git pull</b> and then push it back after selecting changes we want to retain in case of same line changes
-   in central and local repository using command <b>git push -u origin Branch-Name</b></p>
-  <li><b>git clone</b></li>
-  <p>The commnad <b>git clone URL</b> is used to clone or copy the central repository in your machine and we can use
-   that code for any purpose.</p>
- </ol>
+      You will be shown this page.Now create name for your repository and choose options of your choice and click on
+      create
+      repository
+    </p>
+    <img src="./Pictures/GitRepoCreationB.PNG" alt="GitRepoCreation" class="center">
+    <p>
+      After successfully creation of repository you will be shown this page and this will be URL for your repository.
+    </p>
+    <img src="./Pictures/GitRepoCreationC.PNG" alt="GitRepoCreation" class="center">
+  </body>
+  <ol>
+    <li><b>git init</b></li>
+    <p>Open directory in terminal and initialize the empty git repository on local machine using commad <b>git init
+      </b></p>
+    <img src="./Pictures/GitInit.PNG" alt="GitInit" class="center">
+    <li><b>git status</b></li>
+    <p>This command will tell you about files which are modifed,updated or deleted</p>
+    <img src="./Pictures/GitStatus.PNG" alt="GitStatus" class="center">
+    <li><b>git add</b></li>
+    <p>The command <b> git add File-Name </b> (which add particular file to stage area ) or <b>git add .</b> (which add
+      all
+      files of directory to staging area) </p>
+    <img src="./Pictures/GitAdd.PNG" alt="GitAdd" class="center">
+    <li><b>git commit</b></li>
+    <p>Once the files are in staging area, you can save them to commit history usnig coomand <b>git commit -m
+        Message</b>
+    </p>
+    <img src="./Pictures/GitCommit.PNG" alt="GitCommit" class="center">
+    <li><b>git remote add origin URL</b></li>
+    <p>Once the commits have be saved we can send this changes to GitHub.In order to do that we first have to link over
+      local repository which we created using <b>git init</b> and that repository which we created on GitHub, using
+      command
+      <b>git remote add origin URL</b>
+    </p>
+    <img src="./Pictures/GitRemote.PNG" alt="GitRemote" class="center">
+    <li><b>git push -u origin Branch-Name</b></li>
+    <p>Once the coonection between local repository and online repository has been established, we can push our changes
+      to
+      online or central repository so that data remain synchronous by using command <b>git push -u origin
+        Branch-name</b>
+    </p>
+    <img src="./Pictures/GitPush.PNG" alt="GitPush" class="center">
+    <p>After git push commnad you can see all the changes have be saved in central repository and it also show the no.
+      of
+      commits have been made so far.</p>
+    <img src="./Pictures/CentralRepo.PNG" alt="Git Central repo" class="center">
+    <li><b>git pull</b></li>
+    <p>This commnad is used to pull the changes made in remote repository to local repository</p>
+    <p>Consider if our local repository is synchronized with central repository but we we made changes at central
+      repository as well
+      as on local repository and try to push our loacl changes to online repository we will shown an error message like
+      remote contain work that you donot contain locally so we have to pull the changes from remote to loacl first using
+      command <b>git pull</b> and then push it back after selecting changes we want to retain in case of same line
+      changes
+      in central and local repository using command <b>git push -u origin Branch-Name</b></p>
+    <li><b>git clone</b></li>
+    <p>The commnad <b>git clone URL</b> is used to clone or copy the central repository in your machine and we can use
+      that code for any purpose.</p>
+  </ol>
 
 </html>
